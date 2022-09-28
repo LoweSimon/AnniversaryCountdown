@@ -5,10 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Countdown to Anniversary</title>
+    <title>Countdown timer</title>
 </head>
 <body>
-    <h1>Countdown to 10 years of marriage!!</h1>
+    <h1>Countdown to <span id="countdown"></span></h1>
+    <h3>Pick the date you want</h3>
+    <input type="date" id="datePicketr">
+    <button type="button" id="submitTime">Submit</button>
+    <br>
     <div id="clockdiv">
         <div>
             <span class="days" id="day"></span>

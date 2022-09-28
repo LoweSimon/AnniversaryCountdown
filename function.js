@@ -1,4 +1,5 @@
-var deadline = new Date("sept 22, 2022 00:00:00").getTime();
+var deadline = new Date().getTime();
+deadline.document.getElementById("datePicker");
 
 var x = setInterval(function()  {
     var now = new Date().getTime();
@@ -14,7 +15,6 @@ var x = setInterval(function()  {
 
     if (t < 0)  {
         clearInterval(x);
-        document.getElementById("demo").innerHTML = "HAPPY ANNIVERSARY";
         document.getElementById("day").innerHTML = '0';
         document.getElementById("hour").innerHTML = '0';
         document.getElementById("minute").innerHTML = '0';
